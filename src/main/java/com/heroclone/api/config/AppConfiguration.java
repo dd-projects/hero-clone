@@ -1,4 +1,4 @@
-package com.heroclone.internal.springsample.api.config;
+package com.heroclone.api.config;
 
 import java.io.IOException;
 
@@ -10,7 +10,7 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 @Configuration  
-@ComponentScan({ "com.heroclone.internal.springsample.api.*"})
+@ComponentScan({ "com.heroclone.api.*"})
 @Import({ MvcConfiguration.class}) //, SecurityConfig.class }) //, RepositoryConfiguration.class, SecurityConfiguration.class })
 public class AppConfiguration {
     @Bean

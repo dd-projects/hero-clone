@@ -1,4 +1,4 @@
-package com.heroclone.internal.springsample.api.controller;
+package com.heroclone.api.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;

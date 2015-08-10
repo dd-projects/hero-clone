@@ -1,4 +1,4 @@
-package com.heroclone.internal.springsample.api.domain;
+package com.heroclone.api.domain;
 
 public class NDUSPerson {
     private String first, last;

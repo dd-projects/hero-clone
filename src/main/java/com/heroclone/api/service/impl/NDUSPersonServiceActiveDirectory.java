@@ -1,9 +1,9 @@
-package com.heroclone.internal.springsample.api.service.impl;
+package com.heroclone.api.service.impl;
 
 import org.springframework.stereotype.Service;
 
-import com.heroclone.internal.springsample.api.domain.NDUSPerson;
-import com.heroclone.internal.springsample.api.service.NDUSPersonService;
+import com.heroclone.api.domain.NDUSPerson;
+import com.heroclone.api.service.NDUSPersonService;
 
 @Service
 public class NDUSPersonServiceActiveDirectory implements NDUSPersonService {

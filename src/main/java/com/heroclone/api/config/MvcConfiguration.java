@@ -1,4 +1,4 @@
-package com.heroclone.internal.springsample.api.config;
+package com.heroclone.api.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

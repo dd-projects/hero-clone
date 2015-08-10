@@ -1,5 +1,5 @@
-package com.heroclone.internal.springsample.api.config;
-/*package com.heroclone.internal.springsample.api.config;
+package com.heroclone.api.config;
+/*package com.heroclone.api.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

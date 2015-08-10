@@ -1,4 +1,4 @@
-package com.heroclone.internal.springsample.api.repo.impl;
+package com.heroclone.api.repo.impl;
 
 import javax.naming.NamingException;
 import javax.naming.directory.Attributes;
@@ -7,8 +7,8 @@ import org.springframework.ldap.core.AttributesMapper;
 import org.springframework.ldap.core.LdapTemplate;
 import org.springframework.stereotype.Repository;
 
-import com.heroclone.internal.springsample.api.domain.NDUSPerson;
-import com.heroclone.internal.springsample.api.repo.NDUSPersonRepo;
+import com.heroclone.api.domain.NDUSPerson;
+import com.heroclone.api.repo.NDUSPersonRepo;
 
 @Repository
 public class NDUSPersonRepoActiveDirectory implements NDUSPersonRepo {
