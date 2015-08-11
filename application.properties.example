@@ -1,3 +1,5 @@
+#This file should be deployed to appsHome/heroclone/application.properties
+#appsHome is defined in the tomcat context.xml as an environment variable
 app.name=HeroClone
 
 #DB properties:
