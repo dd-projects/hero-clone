@@ -3,8 +3,8 @@ app.name=HeroClone
 #DB properties:
 db.driver=com.mysql.jdbc.Driver
 db.url=jdbc:mysql://localhost:3306/heroclone
-db.username=heroclone
-db.password=hclone!
+db.username=
+db.password=
 
 #Hibernate Configuration:
 hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect

@@ -12,7 +12,9 @@
 	</head>
 	<body>
 		<p>Lol!</p>
-		<h2>${msg}</h2>
+		<c:forEach items="${msg}" var="item">
+    		${item.name}<br>
+		</c:forEach>
 		<c:url value="resources/js/test.js" />
 		<a href="resources/js/test.js">Test</a>	
 	</body>

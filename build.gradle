@@ -21,22 +21,34 @@ sourceCompatibility = 1.7
 targetCompatibility = 1.7
 
 dependencies {
-    compile 'org.springframework:spring-webmvc:4.1.6.RELEASE'
+    compile 'org.springframework:spring-webmvc:4.2.0.RELEASE'
+    compile 'org.springframework:spring-context:4.2.0.RELEASE'
+    compile 'org.springframework:spring-orm:4.2.0.RELEASE'
+    compile 'org.springframework.data:spring-data-commons-core:1.4.1.RELEASE'
+    
+    compile 'org.hibernate:hibernate-core:4.3.11.Final'
+    compile 'org.hibernate:hibernate-entitymanager:4.3.11.Final'
+    
+    compile 'mysql:mysql-connector-java:5.1.36'
+    
     compile 'com.fasterxml.jackson.core:jackson-core:2.5.3'
     compile 'com.fasterxml.jackson.core:jackson-databind:2.5.3'
-    compile 'org.springframework.ldap:spring-ldap-core:2.0.3.RELEASE'
-    /*compile 'org.springframework.security:spring-security-core:4.0.1.RELEASE'
+    
+    compile 'org.slf4j:slf4j-log4j12:1.7.12'
+    
+    compile 'org.apache.logging.log4j:log4j-core:2.3'
+    compile 'org.apache.logging.log4j:log4j-web:2.3'
+    compile 'org.apache.commons:commons-dbcp2:2.1.1'
+    
+    compile 'org.glassfish.web:javax.servlet.jsp.jstl:1.2.4'
+
+    providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+    
+        /*compile 'org.springframework.security:spring-security-core:4.0.1.RELEASE'
     compile 'org.springframework.security:spring-security-ldap:4.0.1.RELEASE'
     compile 'org.springframework.security:spring-security-web:4.0.1.RELEASE'
     compile 'org.springframework.security:spring-security-config:4.0.1.RELEASE'*/
-    compile 'org.apache.logging.log4j:log4j-core:2.3'
-    compile 'org.apache.logging.log4j:log4j-web:2.3'
-    compile 'org.springframework.data:spring-data-commons-core:1.4.1.RELEASE'
-    compile 'org.slf4j:slf4j-log4j12:1.7.12'
-    compile 'org.glassfish.web:javax.servlet.jsp.jstl:1.2.4'
-
     
-    providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
 }
 
 war {
