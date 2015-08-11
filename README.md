@@ -15,6 +15,7 @@ As of version 0.0, this is a simple proof of concept STS project that incorporat
 - Spring Web MVC 4.1.6
 - jQuery
 - HTML5
+- Hibernate 4
 
 ## Contributors
 - Prov
