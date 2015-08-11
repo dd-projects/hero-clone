@@ -14,30 +14,36 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jndi.JndiTemplate;
 
-@Configuration  
-@ComponentScan({ "com.heroclone.api.*"})
-@Import({ MvcConfiguration.class}) //, SecurityConfig.class }) //, RepositoryConfiguration.class, SecurityConfiguration.class })
+@Configuration
+@ComponentScan({ "com.heroclone.api.*" })
+@Import({ MvcConfiguration.class })
+// , SecurityConfig.class }) //, RepositoryConfiguration.class,
+// SecurityConfiguration.class })
 public class AppConfiguration {
-	
-	@Autowired
-	private static ServletContext svc;
-	
+
+    @Autowired
+    private static ServletContext svc;
+
     @Bean
-    public static PropertySourcesPlaceholderConfigurer propertyPlaceholderConfigurer() throws IOException {
-        
-    	JndiTemplate jd = new JndiTemplate();
-    	String home = null;
-    	try {
-			home = (String) jd.lookup("java:comp/env/appsHome");
-		} catch (NamingException e) {
-			home = "/opt";
-		}
-    	
-    	PropertySourcesPlaceholderConfigurer c = new PropertySourcesPlaceholderConfigurer();
-        
-        //c.setLocations(new PathMatchingResourcePatternResolver().getResources("classpath:application.properties"));
-        
-        c.setLocations(new PathMatchingResourcePatternResolver().getResources("file:" + home + "/heroclone/application.properties"));
+    public static PropertySourcesPlaceholderConfigurer propertyPlaceholderConfigurer()
+            throws IOException {
+
+        JndiTemplate jd = new JndiTemplate();
+        String home = null;
+        try {
+            home = (String) jd.lookup("java:comp/env/appsHome");
+        } catch (NamingException e) {
+            home = "/opt";
+        }
+
+        PropertySourcesPlaceholderConfigurer c = new PropertySourcesPlaceholderConfigurer();
+
+        // c.setLocations(new
+        // PathMatchingResourcePatternResolver().getResources("classpath:application.properties"));
+
+        c.setLocations(new PathMatchingResourcePatternResolver()
+                .getResources("file:" + home
+                        + "/heroclone/application.properties"));
         return c;
     }
 }

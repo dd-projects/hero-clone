@@ -12,31 +12,30 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 import com.heroclone.api.config.AppConfiguration;
 
-public class SpringConfigurationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer
-{
+public class SpringConfigurationInitializer extends
+        AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
-    protected Class<?>[] getRootConfigClasses()
-    {
+    protected Class<?>[] getRootConfigClasses() {
         return new Class[] { AppConfiguration.class };
     }
- 
+
     @Override
-    protected Class<?>[] getServletConfigClasses()
-    {
+    protected Class<?>[] getServletConfigClasses() {
         return null;
     }
- 
+
     @Override
-    protected String[] getServletMappings()
-    {
+    protected String[] getServletMappings() {
         return new String[] { "/" };
     }
-    
+
     @Override
-    public void onStartup(ServletContext servletContext) throws ServletException {
+    public void onStartup(ServletContext servletContext)
+            throws ServletException {
         WebApplicationContext context = getContext();
         servletContext.addListener(new ContextLoaderListener(context));
-        ServletRegistration.Dynamic dispatcher = servletContext.addServlet("DispatcherServlet", new DispatcherServlet(context));
+        ServletRegistration.Dynamic dispatcher = servletContext.addServlet(
+                "DispatcherServlet", new DispatcherServlet(context));
         dispatcher.setLoadOnStartup(1);
         dispatcher.addMapping("/");
     }
@@ -46,5 +45,5 @@ public class SpringConfigurationInitializer extends AbstractAnnotationConfigDisp
         context.setConfigLocation("com.heroclone.api.*");
         return context;
     }
- 
+
 }

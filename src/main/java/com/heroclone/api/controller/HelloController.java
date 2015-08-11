@@ -17,30 +17,30 @@ import com.heroclone.api.model.Sample;
 @RequestMapping("api")
 public class HelloController {
 
-	@Autowired
-	SampleDAO sampleDAO;
-    
+    @Autowired
+    SampleDAO sampleDAO;
+
     @Value("${app.name}")
     private String appname;
-    
+
     @ResponseBody
-    @RequestMapping(value="getobj", method = RequestMethod.POST)
+    @RequestMapping(value = "getobj", method = RequestMethod.POST)
     public Object getObj() {
-    	String x = "YO!";
-    	return x;
+        String x = "YO!";
+        return x;
     }
-    
-    @RequestMapping(value="hello", method=RequestMethod.GET)
+
+    @RequestMapping(value = "hello", method = RequestMethod.GET)
     public ModelAndView hello() {
-    	Sample s = new Sample();
-    	s.setName("OBJECT_TABLE_33X22");
-    	s.setIcon("http://www.google.com");
-    	s.setWalkable(false);
-    	
-    	List<Sample> list = sampleDAO.list();
-    	
+        Sample s = new Sample();
+        s.setName("OBJECT_TABLE_33X22");
+        s.setIcon("http://www.google.com");
+        s.setWalkable(false);
+
+        List<Sample> list = sampleDAO.list();
+
         ModelAndView model = new ModelAndView("hello");
-		model.addObject("msg", list);
-		return model;
+        model.addObject("msg", list);
+        return model;
     }
 }

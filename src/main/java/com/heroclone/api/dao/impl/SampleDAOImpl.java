@@ -13,13 +13,13 @@ import com.heroclone.api.model.Sample;
 
 @Repository
 public class SampleDAOImpl implements SampleDAO {
-	private SessionFactory sessionFactory;
-	
-	@Autowired
+    private SessionFactory sessionFactory;
+
+    @Autowired
     public void setSessionFactory(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
-	
+
     @Override
     public void save(Sample s) {
         Session session = this.sessionFactory.openSession();
@@ -28,7 +28,7 @@ public class SampleDAOImpl implements SampleDAO {
         tx.commit();
         session.close();
     }
- 
+
     @SuppressWarnings("unchecked")
     @Override
     public List<Sample> list() {
@@ -37,5 +37,5 @@ public class SampleDAOImpl implements SampleDAO {
         session.close();
         return sampleList;
     }
-	
+
 }
