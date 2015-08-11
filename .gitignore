@@ -15,4 +15,4 @@
 /gradlew
 /gradlew.bat
 /src/main/resources/application.properties
-/localbuild.gradle
+/user.gradle

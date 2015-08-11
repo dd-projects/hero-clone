@@ -64,4 +64,6 @@ allprojects {
     }
 }
 
-apply from localbuild.gradle
+if (file('user.gradle').exists()) {
+    apply from: 'user.gradle'
+}
