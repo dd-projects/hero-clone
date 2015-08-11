@@ -10,7 +10,7 @@ As of version 0.0, this is a simple proof of concept STS project that incorporat
 ## Technologies:
 - Java 7
 - Tomcat
-- MySQL 5.6
+- MySQL 5.5
 - Spring Tool Suite 3.7
 - Spring Web MVC 4.1.6
 - jQuery
