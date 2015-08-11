@@ -52,7 +52,7 @@ dependencies {
 }
 
 war {
-	archiveName = "example.war"
+	archiveName = "heroclone.war"
 }
 
 
@@ -64,20 +64,4 @@ allprojects {
     }
 }
 
-
-remotes {
-  webServer {
-    host = '192.168.0.15'
-    user = 'root'
-    identity = file('c:\\users\\prov\\.ssh\\id_rsa')
-    knownHosts = allowAnyHosts
-  }
-}
-
-task deploy << {
-  ssh.run {
-    session(remotes.webServer) {
-      put from: 'build/libs/example.war', into: '/root/webapps'
-    }
-  }
-}
+apply from localbuild.gradle
