@@ -21,9 +21,6 @@ import org.springframework.jndi.JndiTemplate;
 // SecurityConfiguration.class })
 public class AppConfiguration {
 
-    @Autowired
-    private static ServletContext svc;
-
     @Bean
     public static PropertySourcesPlaceholderConfigurer propertyPlaceholderConfigurer()
             throws IOException {
