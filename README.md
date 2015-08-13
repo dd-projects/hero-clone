@@ -23,7 +23,7 @@ As of version 0.0, this is a simple proof of concept STS project that incorporat
 brew install gradle 
 ```
 ### Install STS from https://spring.io/tools
-#### Mac OSX
+##### Mac OSX
 1. Download the tarball
 2. Unzip to /opt/
 3. Symlink sts.app into Applications
@@ -31,7 +31,7 @@ brew install gradle
 ln -s /opt/spring-tool-suite/sts.app /Applications/sts.app
 ```
 
-#### Windows
+##### Windows
 1. Run installer
 
 ### Install required plugins
@@ -52,12 +52,12 @@ ln -s /opt/spring-tool-suite/sts.app /Applications/sts.app
 4. Right click project -> Gradle -> Refresh All (This will collect the dependencies)
 
 ### Building the project
-#### Command-Line
+##### Command-Line
 ```bash
 cd sample-spring
 gradle clean build
 ```
-#### GUI
+##### GUI
 
 1. Right-click project
 2. Gradle -> Build
