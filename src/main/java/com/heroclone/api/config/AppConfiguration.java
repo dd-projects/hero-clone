@@ -17,8 +17,6 @@ import org.springframework.jndi.JndiTemplate;
 @Configuration
 @ComponentScan({ "com.heroclone.api.*" })
 @Import({ MvcConfiguration.class })
-// , SecurityConfig.class }) //, RepositoryConfiguration.class,
-// SecurityConfiguration.class })
 public class AppConfiguration {
 
     @Bean
@@ -34,10 +32,6 @@ public class AppConfiguration {
         }
 
         PropertySourcesPlaceholderConfigurer c = new PropertySourcesPlaceholderConfigurer();
-
-        // c.setLocations(new
-        // PathMatchingResourcePatternResolver().getResources("classpath:application.properties"));
-
         c.setLocations(new PathMatchingResourcePatternResolver()
                 .getResources("file:" + home
                         + "/heroclone/application.properties"));
