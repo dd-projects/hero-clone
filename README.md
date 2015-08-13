@@ -2,7 +2,7 @@
 
 An adventure game for 2-5 players
 
-## Where we're at
+## Where we're at:
 This project is being undertaken in the pursuit of familiarizing ourselves with Java-based web applications, Tomcat, and Spring WEBMVC/Security.
 
 As of version 0.0, this is a simple proof of concept STS project that incorporates basic JSTL, and initializes a Spring WEBMVC application. Our hope is to keep this running and turn it into a real live game. Keep an eye out!
@@ -17,7 +17,7 @@ As of version 0.0, this is a simple proof of concept STS project that incorporat
 - HTML5
 - Hibernate 4
 
-## Getting Started
+## Getting Started:
 ### Install Gradle
 ```bash
 brew install gradle 
@@ -66,5 +66,5 @@ gradle clean build
 Build artefacts are located in build/libs. Copy the WAR file to tomcat's webapps folder to deploy
 
 
-## Contributors
+## Contributors:
 - Prov
