@@ -14,7 +14,7 @@ import org.springframework.jndi.JndiTemplate;
 
 @Configuration
 @ComponentScan({ "com.heroclone.api.*" })
-@Import({ MvcConfiguration.class })
+@Import({ MvcConfiguration.class, PersistenceConfiguration.class })
 public class AppConfiguration {
 
     @Bean
