@@ -1,4 +1,4 @@
-# HeroClone v0.0.1
+# HeroClone v0.0.2
 
 An adventure game for 2-5 players
 
@@ -16,6 +16,13 @@ As of version 0.0, this is a simple proof of concept STS project that incorporat
 - jQuery
 - HTML5
 - Hibernate 4
+
+## Release Process
+The release process is documented at 
+
+https://www.lucidchart.com/publicSegments/view/55cc3fba-3874-4b82-b819-598b0a00c60f/image.png
+
+The goal with this process is to have one official commit message per bug in the master branch history. Additionally, one commit per major release.
 
 ## Getting Started:
 ### Install Gradle
