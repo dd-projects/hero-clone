@@ -3,9 +3,7 @@ package com.heroclone.api.config;
 import java.io.IOException;
 
 import javax.naming.NamingException;
-import javax.servlet.ServletContext;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
