@@ -18,9 +18,13 @@ As of version 0.0, this is a simple proof of concept STS project that incorporat
 - Hibernate 4
 
 ## Release Process
-The release process is documented at 
+The release process is documented
 
-https://www.lucidchart.com/publicSegments/view/55cc3fba-3874-4b82-b819-598b0a00c60f/image.png
+#### Flowchart
+[PNG via LucidChart](https://www.lucidchart.com/publicSegments/view/55cc3fba-3874-4b82-b819-598b0a00c60f/image.png)
+
+#### Git Diagram
+[PNG via LucidChart](https://www.lucidchart.com/publicSegments/view/55cd38dc-ca4c-4732-83d4-49880a005a36/image.png)
 
 The goal with this process is to have one official commit message per bug in the master branch history. Additionally, one commit per major release.
 
