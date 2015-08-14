@@ -1,4 +1,4 @@
-# HeroClone v0.0.3
+# HeroClone v0.0.4
 
 An adventure game for 2-5 players
 
