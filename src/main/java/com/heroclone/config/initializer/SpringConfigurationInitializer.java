@@ -1,4 +1,4 @@
-package com.heroclone.api.config.initializer;
+package com.heroclone.config.initializer;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -10,7 +10,7 @@ import org.springframework.web.context.support.AnnotationConfigWebApplicationCon
 import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-import com.heroclone.api.config.AppConfiguration;
+import com.heroclone.config.AppConfiguration;
 
 public class SpringConfigurationInitializer extends
         AbstractAnnotationConfigDispatcherServletInitializer {
@@ -42,7 +42,7 @@ public class SpringConfigurationInitializer extends
 
     private AnnotationConfigWebApplicationContext getContext() {
         AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
-        context.setConfigLocation("com.heroclone.api.*");
+        context.setConfigLocation("com.heroclone.*");
         return context;
     }
 

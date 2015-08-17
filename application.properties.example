@@ -1,6 +1,8 @@
 #This file should be deployed to appsHome/heroclone/application.properties
 #appsHome is defined in the tomcat context.xml as an environment variable
 app.name=HeroClone
+app.baseUrl=http://homeweb:8080/heroclone/
+app.apiBaseUrl=http://homeweb:8080/heroclone/api/
 
 #DB properties:
 db.driver=com.mysql.jdbc.Driver
