@@ -1,4 +1,4 @@
-package com.heroclone.api.config;
+package com.heroclone.config;
 
 import java.io.IOException;
 
@@ -13,7 +13,7 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jndi.JndiTemplate;
 
 @Configuration
-@ComponentScan({ "com.heroclone.api.*" })
+@ComponentScan({ "com.heroclone.api.*", "com.heroclone.api.impl.*" })
 @Import({ MvcConfiguration.class, PersistenceConfiguration.class })
 public class AppConfiguration {
 

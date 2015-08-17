@@ -11,11 +11,12 @@ USE `heroclone`;
 /*Table structure for table `sample` */
 
 CREATE TABLE `sample` (
-  `name` varchar(50) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
   `icon` varchar(300) DEFAULT NULL,
   `walkable` tinyint(1) DEFAULT NULL,
-  PRIMARY KEY (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  PRIMARY KEY (`id`),
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=latin1
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

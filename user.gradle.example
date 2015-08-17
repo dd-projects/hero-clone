@@ -1,0 +1,27 @@
+apply plugin: 'org.hidetake.ssh'
+
+remotes {
+  webServer {
+    host = 'homeweb'
+    user = 'root'
+    identity = file('c:\\users\\me\\.ssh\\id_rsa')
+    knownHosts = allowAnyHosts
+  }
+}
+
+task deploy << {
+  ssh.run {
+    session(remotes.webServer) {
+      put from: 'build/libs/heroclone.war', into: '/root/webapps'
+    }
+  }
+}
+
+task deployStatics << {
+  ssh.run {
+    session(remotes.webServer) {
+      put from: 'src/main/webapp/jsp/', into: '/var/lib/tomcat/webapps/heroclone/'
+      put from: 'src/main/webapp/WEB-INF/', into: '/var/lib/tomcat/webapps/heroclone/'
+    }
+  }
+}

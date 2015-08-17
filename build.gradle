@@ -5,9 +5,14 @@ plugins {
 
 apply plugin: 'eclipse'
 apply plugin: 'java'
-apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'war'
+
+eclipse {
+    project {
+        natures 'org.eclipse.wst.jsdt.core.jsNature', 'org.springsource.ide.eclipse.gradle.core.nature'
+    }
+}
 
 repositories {
 	mavenLocal()
@@ -26,7 +31,7 @@ dependencies {
     compile 'org.springframework:spring-webmvc:4.2.0.RELEASE'
     compile 'org.springframework:spring-context:4.2.0.RELEASE'
     compile 'org.springframework:spring-orm:4.2.0.RELEASE'
-    compile 'org.springframework.data:spring-data-commons-core:1.4.1.RELEASE'
+    compile 'org.springframework.data:spring-data-jpa:1.8.2.RELEASE'
     
     compile 'org.hibernate:hibernate-core:4.3.11.Final'
     compile 'org.hibernate:hibernate-entitymanager:4.3.11.Final'
